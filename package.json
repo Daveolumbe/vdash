@@ -1,0 +1,17 @@
+{
+  "name": "visilinx",
+  "version": "1.0.0",
+  "description": "Dashboard for visilinx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dashboard"
+  ],
+  "author": "David Olumbe",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.3.3"
+  }
+}
