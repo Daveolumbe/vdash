@@ -1,6 +1,6 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #252830;
-$vfontcolor: #fff;
+$vfontcolor: #ddd;
 
 body{
   background-color: $primary-color;
@@ -8,3 +8,37 @@ body{
   color: $vfontcolor;
 }
 
+
+.outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .25s;
+}
+
+.btn-primary.outline {
+  color: #428bca;
+}
+
+.btn-success.outline {
+  color: #5cb85c;
+}
+
+.btn-info.outline {
+  color: #5bc0de;
+}
+
+.btn-warning.outline {
+  color: #f0ad4e;
+}
+
+.btn-danger.outline {
+  color: #d9534f;
+}
+
+.btn-primary.outline:hover,
+.btn-success.outline:hover,
+.btn-info.outline:hover,
+.btn-warning.outline:hover,
+.btn-danger.outline:hover {
+  color: #fff;
+}

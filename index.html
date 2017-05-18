@@ -32,7 +32,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#"><i class="fa fa-home fa-1x"></i> <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Login <i class="fa fa-sign-in"></i></a></li>
-                <li class="dropdown">
+                <li class="dropdown hide">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
@@ -45,7 +45,7 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right hide">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -63,14 +63,22 @@
 <div class="container" id="app">
     <div class="row">
         <div class="col-md-3">
-            <h1>{{ message }} {{name}}</h1>
         </div>
-        <div class="col-md-9">
-            <div class="row">
+        <div class="col-md-6 col-sm-6">
+            <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i>
+            <h4>
+                Welcome to visilinx dashboad
+            <small>Powerful Visitor & Contractor Check-in Software</small></h4>
 
-            </div>
+            <p>
+                Visilinx is now powered by a new web dashboard which will show you faster visitor entries real-time and allow you to search more quickly.
+            </p>
+            <p>Try our new web service at visilinx.com</p>
+
+            <button class="btn btn-warning outline btn-lg"> Getting Stated</button>
         </div>
-
+        <div class="col-md-3">
+        </div>
     </div>
 
 </div>
