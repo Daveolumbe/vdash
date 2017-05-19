@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,22 +17,25 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="25px" /> </a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="25px"/> </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#"><i class="fa fa-home fa-1x"></i> <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="#"><i class="fa fa-home fa-1x"></i> <span
+                        class="sr-only">(current)</span></a></li>
                 <li><a href="#">Login <i class="fa fa-sign-in"></i></a></li>
                 <li class="dropdown hide">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -47,7 +49,8 @@
             </ul>
             <ul class="nav navbar-nav navbar-right hide">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Account <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -62,24 +65,86 @@
 </nav>
 <div class="container" id="app">
     <div class="row">
-        <div class="col-md-3">
-        </div>
-        <div class="col-md-6 col-sm-6">
-            <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i>
-            <h4>
-                Welcome to visilinx dashboad
-            <small>Powerful Visitor & Contractor Check-in Software</small></h4>
+        <!--<div class="col-md-6">-->
+        <!--<img src="assets/img/logo2.png" width="20%"><i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i>-->
+        <!--<h4>-->
+        <!--Welcome to visilinx dashboad-->
+        <!--<small>Powerful Visitor & Contractor Check-in Software</small></h4>-->
 
-            <p>
-                Visilinx is now powered by a new web dashboard which will show you faster visitor entries real-time and allow you to search more quickly.
-            </p>
-            <p>Try our new web service at visilinx.com</p>
+        <!--<p>-->
+        <!--Visilinx is now powered by a new web dashboard which will show you faster visitor entries real-time and allow you to search more quickly.-->
+        <!--</p>-->
+        <!--<p>Try our new web service at visilinx.com</p>-->
 
-            <button class="btn btn-warning outline btn-lg"> Getting Stated</button>
+        <!--<button class="btn btn-warning outline btn-lg"> Getting Stated</button>-->
+
+        <!--</div>-->
+        <div class="col-md-3"></div>
+        <div class="center-block col-md-6">
+            <h2>Create Your Dashboard</h2>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label>Create login</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control outline input-lg" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-inline form-group">
+                    <div class="form-group ">
+                        <input type="text" class="form-control outline input-lg" placeholder="Password">
+                    </div>
+                    <div class="form-group pull-right">
+                        <input type="text" class="form-control outline input-lg" placeholder="Confirm password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Your details</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control outline input-lg" id="" placeholder="Create new user name">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control outline input-lg" id="exampleInputPassword1"
+                           placeholder="Choose new password">
+                </div>
+                <div class="form-group">
+                    <label>
+                        Please choose your usage type.
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" v-model="picked"
+                               value="Private Company">
+                        Private company
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios" v-model="picked" value="Hostel">
+                        Hostel
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" v-model="picked" value="Estate">
+                        Estate
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="">{{ picked }}</label>
+                    <input type="text" class="form-control  outline input-lg" id="companyName"
+                           placeholder="Example: Banana Island">
+                </div>
+
+                <button type="submit" class="btn btn-warning btn-lg btn-block ">Create Account <i
+                        class="fa fa-briefcase"></i></button>
+            </form>
         </div>
-        <div class="col-md-3">
-        </div>
+        <div class="col-md-3"></div>
     </div>
+
 
 </div>
 <!-- Include jQuery (required) and the JS -->
@@ -87,5 +152,6 @@
 <script src="./assets/vue@2.3.3.js"></script>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<script src="./bower_components/axios/dist/axios.js"></script>
 <script type="application/javascript" src="./assets/app.js"></script>
 </html>

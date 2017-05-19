@@ -3,6 +3,9 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #252830;
+$vfontcolor: #ddd;
 
 //== Colors
 //
@@ -21,7 +24,7 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
-$vbody-color:  #252830;
+$vbody-color:  $primary-color;
 
 //== Scaffolding
 //
